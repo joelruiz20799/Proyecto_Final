@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto 1 - Tienda Online</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Para los iconos -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        /*.container {
+            width: 80%;
+            margin: 40px auto;
+        }*/
+        h1 {
+            text-align: center;
+        }
+        .product-details {
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .product-image {
+            flex: 1;
+            max-width: 500px;
+        }
+        .product-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product-info {
+            flex: 1;
+        }
+        .product-info h2 {
+            color: #333;
+        }
+        .price {
+            font-size: 24px;
+            color: #007BFF;
+            margin: 20px 0;
+        }
+        .description {
+            margin: 20px 0;
+            color: #555;
+        }
+        .quantity-section {
+            margin: 20px 0;
+        }
+        .quantity-section label {
+            font-size: 18px;
+        }
+        .quantity-section input {
+            padding: 5px;
+            margin-top: 5px;
+            width: 60px;
+            text-align: center;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+     <!--Inicio de  encabezado-->
+     <header class="bg-primary text-white text-center py-3">
+        <h1>Bienvenido a InnoLogic</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="intex.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="about.html">sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="shop.html">servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="shop-single.html">Compras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                </li>
+                <!-- Iconos -->
+                <li class="nav-item">
+                    <a href="shop-single.html" class="nav-link text-white"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link text-white"><i class="fas fa-user"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<!--Fin Encabezado--> 
+    <h1>Detalle de los Productos</h1>
+
+<div class="container">
+
+    <!-- Detalles del producto -->
+    <div class="product-details">
+
+        <!-- Imagen del producto -->
+        <div class="product-image">
+            <img src="assets/img/estrategia.jpeg"Producto 1">
+        </div>
+
+        <!-- Información del producto -->
+        <div class="product-info">
+            <h2>Consultoria Estrategica</h2>
+            <div class="price">$99.99</div>
+            <div class="description">
+                <p>Damos las guias para que puedas logras grande avences tecnologico y estrategigo, desarrollando un entorno de crecimiento, adecuado a la capacidades del la empresa.</p>
+            </div>
+            <!-- Botón de compra -->
+            <button onclick="window.location.href='pago.html';">Compra</button>
+        </div>
+
+    </div>
+    
+
+</div>
+<div class="container">
+
+    <!-- Detalles del producto -->
+    <div class="product-details">
+
+        <!-- Imagen del producto -->
+        <div class="product-image">
+            <img src="assets/img/imagen 2.jpeg"Producto 1">
+        </div>
+
+        <!-- Información del producto -->
+        <div class="product-info">
+            <h2>Transformacion Digital</h2>
+            <div class="price">$199.99</div>
+            <div class="description">
+                <p>Este software avanzado te permitirá optimizar todos los procesos de tu empresa, aumentando la eficiencia y reduciendo costos. Con un diseño intuitivo y características potentes, es la herramienta que necesitas para mejorar tu flujo de trabajo.</p>
+            </div>
+
+            <!-- Botón de compra -->
+            <button onclick="window.location.href='pago.html';">Compra</button>
+        </div>
+    </div>
+
+<div class="container">
+
+    <!-- Detalles del producto -->
+    <div class="product-details">
+    
+            <!-- Imagen del producto -->
+            <div class="product-image">
+                <img src="assets/img/imagen 3.jpeg"Producto 1">
+            </div>
+    
+            <!-- Información del producto -->
+            <div class="product-info">
+                <h2>Desarrollo de Software</h2>
+                <div class="price">$119.99</div>
+                <div class="description">
+                    <p>Aplicamo todo los conocimiento de nuestro profesionales, para el desarrollo de software necesarios para facilitar el orden empresarial y administrativo </p>
+                </div>
+    
+                <!-- Botón de compra -->
+                <button onclick="window.location.href='pago.html';">Compra</button>
+            </div>
+    
+        </div>
+        
+    
+    </div>
+<br>
+<footer>
+    <p>&copy; 2024 Tienda Online - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

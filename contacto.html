@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Empresa de Software</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Para los iconos -->
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Bienvenido a InnoLogic</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="intex.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="about.html">sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="shop.html">servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="shop-single.html">Compras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                </li>
+                <!-- Iconos -->
+                <li class="nav-item">
+                    <a href="shop-single.html" class="nav-link text-white"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link text-white"><i class="fas fa-user"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<div class="container">
+    <h2>Contáctanos</h2>
+    <form action="procesar_contacto.php" method="POST">
+        <label for="nombre">Tu nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Tu correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Tu mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+    <p><a class="text-white" href="privacy.html">Política de privacidad</a> | <a class="text-white" href="terms.html">Términos y condiciones</a></p>
+</footer>
+</body>
+</html>
+
